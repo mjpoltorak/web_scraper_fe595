@@ -16,7 +16,6 @@ def web_scraper():
                 d['Purpose'] = info.split('Purpose: ')[1]
         df = df.append(d, ignore_index=True)
     df.to_csv('companies.csv')
-    print()
 
 
 if __name__ == '__main__':
