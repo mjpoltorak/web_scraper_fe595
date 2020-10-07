@@ -15,6 +15,8 @@ def web_scraper():
             if 'Purpose:' in info:
                 d['Purpose'] = info.split('Purpose: ')[1]
         df = df.append(d, ignore_index=True)
+    # This writes a new file every time and overwrites if it exists. I did this on purpose as the results are subject
+    # to change with each run.
     df.to_csv('companies.csv')
 
 
