@@ -1,7 +1,8 @@
 import requests
 import pandas as pd
 
-
+# I used a try clause just in case an exception occurs, but since it's based on random companies, I don't think a try clause is needed and didn't add in your code. 
+# very good, concise code so I couldn't really find any areas I could improve on
 def web_scraper():
     df = pd.DataFrame(columns=['Name', 'Purpose'])
     for i in range(50):
